@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "updated": "2026-10-11",
+  "_notes": [
+    "Extra models for the HiFiMatch app. Entries here are added to the app's built-in list; a model already in the app is replaced by the entry here.",
+    "Prices are approximate SGD. sonic ratings are 1-10 for warm, neutral, dynamic, bass, vocals, refinement, finesse.",
+    "Amplifier fields: brand, model, price, launch, type (Integrated / Pre/Power / Preamp / Power), discontinued, watts8 (W per channel into 8 ohms), minImpedance, topology, sonic, url (optional).",
+    "Speaker fields: brand, model, price, launch, discontinued, sensitivity (dB), nominalImpedance, minRoom, maxRoom (sq m), speakerType, sonic, url (optional).",
+    "Entries missing brand, model, price, watts8 (amps) or sensitivity (speakers) are skipped. Keep commas between entries and none after the last one."
+  ],
+  "amplifiers": [
+  ],
+  "speakers": [
+    {
+      "brand": "Russell K",
+      "model": "Red 50",
+      "price": 1700,
+      "launch": 2015,
+      "discontinued": true,
+      "sensitivity": 85.0,
+      "nominalImpedance": 8.0,
+      "minRoom": 8.0,
+      "maxRoom": 22.0,
+      "speakerType": "Bookshelf / Stand-mount",
+      "sonic": { "warm": 6, "neutral": 8, "dynamic": 7, "bass": 5, "vocals": 8, "refinement": 8, "finesse": 6 },
+      "_source": "Hi-Fi+ (85 dB, 8 ohm), The Ear 2015 review (neutral, open, dynamic, clear vocals, smooth, limited bass below 50 Hz), hifiverse (45 Hz-22 kHz, ~20 sq m). Price: UK GBP 975 converted. Marked discontinued: appears superseded by an SE version (not confirmed)."
+    }
+  ]
+}
