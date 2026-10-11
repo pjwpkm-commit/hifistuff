@@ -4,11 +4,302 @@
   "_notes": [
     "Extra models for the HiFiMatch app. Entries here are added to the app's built-in list; a model already in the app is replaced by the entry here.",
     "Prices are approximate SGD. sonic ratings are 1-10 for warm, neutral, dynamic, bass, vocals, refinement, finesse.",
-    "Amplifier fields: brand, model, price, launch, type (Integrated / Pre/Power / Preamp / Power), discontinued, watts8 (W per channel into 8 ohms), minImpedance, topology, sonic, url (optional).",
-    "Speaker fields: brand, model, price, launch, discontinued, sensitivity (dB), nominalImpedance, minRoom, maxRoom (sq m), speakerType, sonic, url (optional).",
+    "Amplifier fields: brand, model, price, launch, type (Integrated / Pre/Power / Preamp / Power), discontinued, watts8 (W per channel into 8 ohms), minImpedance, topology, sonic, url (optional), reviews (optional list of review links).",
+    "Speaker fields: brand, model, price, launch, discontinued, sensitivity (dB), nominalImpedance, minRoom, maxRoom (sq m), speakerType, sonic, url (optional), reviews (optional list of review links).",
     "Entries missing brand, model, price, watts8 (amps) or sensitivity (speakers) are skipped. Keep commas between entries and none after the last one."
   ],
   "amplifiers": [
+    {
+      "brand": "Naim",
+      "model": "Uniti Atom",
+      "price": 4200,
+      "launch": 2017,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 40,
+      "minImpedance": 4.0,
+      "topology": "Class AB streaming integrated with DAC",
+      "sonic": {
+        "warm": 6,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 7,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 7
+      },
+      "_source": "Stereophile 2017: 40 W/ch, USD 2,995. SGD approx; current price may differ."
+    },
+    {
+      "brand": "Naim",
+      "model": "Uniti Star",
+      "price": 7700,
+      "launch": 2017,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 70,
+      "minImpedance": 4.0,
+      "topology": "Class AB streaming integrated with DAC and CD",
+      "sonic": {
+        "warm": 6,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 7
+      },
+      "_source": "Stereophile 2017: 70 W/ch, USD 5,495. SGD approx."
+    },
+    {
+      "brand": "Naim",
+      "model": "Uniti Nova",
+      "price": 9800,
+      "launch": 2017,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 80,
+      "minImpedance": 4.0,
+      "topology": "Class AB streaming integrated with DAC",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "_source": "hifiverse: 80 W/ch into 8 ohm, Class A/B; Stereophile 2017: USD 6,995. SGD approx."
+    },
+    {
+      "brand": "Naim",
+      "model": "Nait 50",
+      "price": 5000,
+      "launch": 2023,
+      "type": "Integrated",
+      "discontinued": true,
+      "watts8": 25,
+      "minImpedance": 4.0,
+      "topology": "Class AB integrated with MM phono (50th anniversary limited edition)",
+      "sonic": {
+        "warm": 7,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 7,
+        "vocals": 9,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "_source": "hifiverse: 25 W/8 ohm, 40 W/4 ohm, USD 3,599, limited run of 1,973, out of production."
+    },
+    {
+      "brand": "Yamaha",
+      "model": "R-N800A",
+      "price": 1950,
+      "launch": 2023,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 100,
+      "minImpedance": 4.0,
+      "topology": "Class AB network receiver with DAC/streamer",
+      "sonic": {
+        "warm": 6,
+        "neutral": 7,
+        "dynamic": 8,
+        "bass": 7,
+        "vocals": 7,
+        "refinement": 6,
+        "finesse": 6
+      },
+      "_source": "speakerdecision.com: 100 W/8 ohm, USD 1,400, 2023. SGD approx."
+    },
+    {
+      "brand": "Yamaha",
+      "model": "R-N1000A",
+      "price": 3200,
+      "launch": 2023,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 100,
+      "minImpedance": 4.0,
+      "topology": "Class AB network receiver with DAC/streamer",
+      "sonic": {
+        "warm": 7,
+        "neutral": 7,
+        "dynamic": 8,
+        "bass": 7,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 7
+      },
+      "_source": "speakerdecision.com: 100 W/8 ohm, USD 2,300, 2023. SGD approx."
+    },
+    {
+      "brand": "Yamaha",
+      "model": "R-N2000A",
+      "price": 5000,
+      "launch": 2023,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 90,
+      "minImpedance": 4.0,
+      "topology": "Class AB network receiver with DAC/streamer, balanced design",
+      "sonic": {
+        "warm": 7,
+        "neutral": 8,
+        "dynamic": 8,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "reviews": [
+        "https://www.hifinews.com/content/yamaha-r-n2000a-network-receiver-lab-report"
+      ],
+      "_source": "Hi-Fi News lab report 2023: 90 W rated (115 W measured) into 8 ohm, GBP 2,895. SGD approx."
+    },
+    {
+      "brand": "ModWright",
+      "model": "KWI 200",
+      "price": 10500,
+      "launch": 2012,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 200,
+      "minImpedance": 4.0,
+      "topology": "Class AB MOSFET solid-state integrated",
+      "sonic": {
+        "warm": 7,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "reviews": [
+        "https://witchdoctor.co.nz/?p=7963"
+      ],
+      "_source": "Witchdoctor review 2012: 200 W/8, 400 W/4, USD 7,495 (8,995 with DAC). SGD approx. Current status not confirmed."
+    },
+    {
+      "brand": "ModWright",
+      "model": "KWH 225i",
+      "price": 13700,
+      "launch": 2020,
+      "type": "Integrated",
+      "discontinued": false,
+      "watts8": 225,
+      "minImpedance": 4.0,
+      "topology": "Hybrid: 6922 tube input + solid-state output, first 25 W Class A",
+      "sonic": {
+        "warm": 8,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 9,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "_source": "House of Stereo listing: 225 W/8, 400 W/4, USD 9,750. SGD approx."
+    },
+    {
+      "brand": "ModWright",
+      "model": "LS 100",
+      "price": 4800,
+      "launch": 2013,
+      "type": "Preamp",
+      "discontinued": false,
+      "watts8": 0,
+      "minImpedance": 4.0,
+      "topology": "Tube preamplifier (6SN7, tube rectifier)",
+      "sonic": {
+        "warm": 8,
+        "neutral": 7,
+        "dynamic": 8,
+        "bass": 7,
+        "vocals": 9,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "reviews": [
+        "https://the-ear.net/review-hardware/modwright-instruments-ls-100-and-kwa-100se-preamplifier-power-amplifier/"
+      ],
+      "_source": "The Ear review 2014: LS 100 GBP 2,750. SGD approx."
+    },
+    {
+      "brand": "ModWright",
+      "model": "KWA 100SE",
+      "price": 6100,
+      "launch": 2013,
+      "type": "Power",
+      "discontinued": false,
+      "watts8": 100,
+      "minImpedance": 4.0,
+      "topology": "MOSFET solid-state power amplifier, transformer-coupled input",
+      "sonic": {
+        "warm": 7,
+        "neutral": 8,
+        "dynamic": 8,
+        "bass": 7,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "reviews": [
+        "https://the-ear.net/review-hardware/modwright-instruments-ls-100-and-kwa-100se-preamplifier-power-amplifier/"
+      ],
+      "_source": "The Ear review 2014: 100 W/8, 150 W/4, GBP 3,495; sound neutral, open midrange, bass a little light. SGD approx."
+    },
+    {
+      "brand": "ModWright",
+      "model": "LS 36.5",
+      "price": 14000,
+      "launch": 2017,
+      "type": "Preamp",
+      "discontinued": false,
+      "watts8": 0,
+      "minImpedance": 4.0,
+      "topology": "Reference tube preamplifier with separate power supply",
+      "sonic": {
+        "warm": 8,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 8,
+        "vocals": 9,
+        "refinement": 9,
+        "finesse": 9
+      },
+      "reviews": [
+        "https://hifinews.com/content/modwright-ls-365kwa-150s-%C2%A37995-pre-psu%C2%A36795-power"
+      ],
+      "_source": "Hi-Fi News: LS 36.5 with PSU GBP 7,995. SGD approx; launch year approximate."
+    },
+    {
+      "brand": "ModWright",
+      "model": "KWA 150SE",
+      "price": 14200,
+      "launch": 2017,
+      "type": "Power",
+      "discontinued": false,
+      "watts8": 150,
+      "minImpedance": 4.0,
+      "topology": "Solid-state, first watts Class A, no global feedback, dual-mono, bridgeable",
+      "sonic": {
+        "warm": 7,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "reviews": [
+        "https://hifinews.com/content/modwright-ls-365kwa-150s-%C2%A37995-pre-psu%C2%A36795-power"
+      ],
+      "_source": "Vinyl Sound (Canada) listing: 150 W/ch into 8 ohm, 250 W/ch into 4 ohm (bridged 450/650 W), CA$14,950 current price; Hi-Fi News earlier GBP 6,795. SGD approx from the current CA$ price."
+    }
   ],
   "speakers": [
     {
@@ -22,8 +313,271 @@
       "minRoom": 8.0,
       "maxRoom": 22.0,
       "speakerType": "Bookshelf / Stand-mount",
-      "sonic": { "warm": 6, "neutral": 8, "dynamic": 7, "bass": 5, "vocals": 8, "refinement": 8, "finesse": 6 },
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 7,
+        "bass": 5,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 6
+      },
+      "reviews": [
+        "https://hifiplus.com/articles/russell-k-red-50-standmount-loudspeakers/",
+        "https://the-ear.net/review-hardware/russell-k-red-50-standmount-loudspeaker/"
+      ],
       "_source": "Hi-Fi+ (85 dB, 8 ohm), The Ear 2015 review (neutral, open, dynamic, clear vocals, smooth, limited bass below 50 Hz), hifiverse (45 Hz-22 kHz, ~20 sq m). Price: UK GBP 975 converted. Marked discontinued: appears superseded by an SE version (not confirmed)."
+    },
+    {
+      "brand": "Focal",
+      "model": "Vestia No1",
+      "price": 1400,
+      "launch": 2023,
+      "discontinued": false,
+      "sensitivity": 89.5,
+      "nominalImpedance": 8.0,
+      "minRoom": 8,
+      "maxRoom": 24,
+      "speakerType": "Bookshelf / Stand-mount",
+      "sonic": {
+        "warm": 5,
+        "neutral": 7,
+        "dynamic": 8,
+        "bass": 6,
+        "vocals": 7,
+        "refinement": 6,
+        "finesse": 7
+      },
+      "_source": "Hi-Fi Choice launch news 2023: 2-way bookshelf, 89.5 dB, 8 ohm, GBP 800/pr. SGD approx (converted). Sound rating: estimate from Focal house sound."
+    },
+    {
+      "brand": "Focal",
+      "model": "Vestia No2",
+      "price": 3100,
+      "launch": 2023,
+      "discontinued": false,
+      "sensitivity": 91.5,
+      "nominalImpedance": 8.0,
+      "minRoom": 14,
+      "maxRoom": 35,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 5,
+        "neutral": 7,
+        "dynamic": 8,
+        "bass": 8,
+        "vocals": 7,
+        "refinement": 6,
+        "finesse": 7
+      },
+      "_source": "Hi-Fi Choice 2023: 3-way floorstander, 91.5 dB, 8 ohm, GBP 1,800/pr. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Vestia No3",
+      "price": 4200,
+      "launch": 2023,
+      "discontinued": false,
+      "sensitivity": 92.0,
+      "nominalImpedance": 8.0,
+      "minRoom": 18,
+      "maxRoom": 40,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 5,
+        "neutral": 7,
+        "dynamic": 9,
+        "bass": 8,
+        "vocals": 7,
+        "refinement": 6,
+        "finesse": 7
+      },
+      "_source": "Hi-Fi Choice 2023: 3-way floorstander, 92 dB, GBP 2,400/pr. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Aria Evo X No1",
+      "price": 3400,
+      "launch": 2024,
+      "discontinued": false,
+      "sensitivity": 89.5,
+      "nominalImpedance": 8.0,
+      "minRoom": 10,
+      "maxRoom": 26,
+      "speakerType": "Bookshelf / Stand-mount",
+      "sonic": {
+        "warm": 5,
+        "neutral": 8,
+        "dynamic": 8,
+        "bass": 7,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 8
+      },
+      "_source": "speakerdecision.com (Focal spec): 89.5 dB, 8 ohm, USD 2,398/pr, 2024. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Aria Evo X No2",
+      "price": 6700,
+      "launch": 2024,
+      "discontinued": false,
+      "sensitivity": 91.5,
+      "nominalImpedance": 8.0,
+      "minRoom": 16,
+      "maxRoom": 40,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 5,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 8
+      },
+      "_source": "speakerdecision.com: 91.5 dB, 8 ohm, USD 4,798/pr, 2024. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Aria Evo X No3",
+      "price": 7300,
+      "launch": 2024,
+      "discontinued": false,
+      "sensitivity": 92.0,
+      "nominalImpedance": 8.0,
+      "minRoom": 18,
+      "maxRoom": 45,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 5,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 8
+      },
+      "_source": "speakerdecision.com: 92 dB, 8 ohm, USD 5,198/pr, 2024. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Kanta No1",
+      "price": 7900,
+      "launch": 2019,
+      "discontinued": false,
+      "sensitivity": 88.0,
+      "nominalImpedance": 8.0,
+      "minRoom": 10,
+      "maxRoom": 28,
+      "speakerType": "Bookshelf / Stand-mount",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 7,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 9
+      },
+      "reviews": [
+        "https://hifinews.com/content/focal-kanta-no1-loudspeaker-lab-report"
+      ],
+      "_source": "Hi-Fi News lab report 2019: 88 dB claimed (~87 measured), 8 ohm nominal, min 3.8 ohm, GBP 4,499/pr. SGD approx."
+    },
+    {
+      "brand": "Focal",
+      "model": "Kanta No2",
+      "price": 12200,
+      "launch": 2018,
+      "discontinued": false,
+      "sensitivity": 89.0,
+      "nominalImpedance": 4.0,
+      "minRoom": 18,
+      "maxRoom": 45,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 9
+      },
+      "reviews": [
+        "https://hifinews.com/content/focal-kanta-no2-loudspeaker-lab-report"
+      ],
+      "_source": "Hi-Fi News lab report 2018: 91 dB claimed, ~89 dB measured (used here); 8 ohm nominal but dips to 2.9 ohm, so listed as 4 ohm to require a high-current amp. GBP 6,999/pr. SGD approx."
+    },
+    {
+      "brand": "DALI",
+      "model": "Oberon 3",
+      "price": 1000,
+      "launch": 2018,
+      "discontinued": true,
+      "sensitivity": 87.0,
+      "nominalImpedance": 6.0,
+      "minRoom": 8,
+      "maxRoom": 24,
+      "speakerType": "Bookshelf / Stand-mount",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 8,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 7,
+        "finesse": 7
+      },
+      "_source": "hifiverse: 87 dB, 6 ohm, 2018, listed discontinued by DALI. Price: estimate between built-in Oberon 1 and 5."
+    },
+    {
+      "brand": "DALI",
+      "model": "Opticon 6 MK2",
+      "price": 3500,
+      "launch": 2021,
+      "discontinued": false,
+      "sensitivity": 88.0,
+      "nominalImpedance": 4.0,
+      "minRoom": 15,
+      "maxRoom": 40,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 8,
+        "bass": 8,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "_source": "hifiverse: 88 dB, 4 ohm, USD 2,499/pr, early 2021. SGD approx."
+    },
+    {
+      "brand": "DALI",
+      "model": "Rubikore 8",
+      "price": 10500,
+      "launch": 2024,
+      "discontinued": false,
+      "sensitivity": 90.5,
+      "nominalImpedance": 4.0,
+      "minRoom": 22,
+      "maxRoom": 60,
+      "speakerType": "Floorstander",
+      "sonic": {
+        "warm": 6,
+        "neutral": 8,
+        "dynamic": 9,
+        "bass": 9,
+        "vocals": 8,
+        "refinement": 8,
+        "finesse": 8
+      },
+      "_source": "Hi-Fi+ review: GBP 5,999 / USD 12,000 / EUR 6,998 per pair; 90.5 dB, 4 ohm nominal; 2.5+0.5+0.5-way, 3 x 6.5in woofers, bass to ~38 Hz; generous rather than analytical, strong timing and dynamics. SGD approx (GBP converted).",
+      "reviews": [
+        "https://hifiplus.com/articles/dali-rubikore-8/"
+      ]
     }
   ]
 }
